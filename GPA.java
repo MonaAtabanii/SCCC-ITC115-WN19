@@ -10,18 +10,18 @@ public class GPA {
 	}
 	
 	public static void printGPA(Scanner getData) {
-		int sum = 0;
+		double sum = 0;
 		String name;
 		int total;
 		System.out.print("Enter a student record: ");
 		name = getData.next();
 		total = getData.nextInt();
 		for (int i = 1; i<=total; i++) {
-			double score = getData.nextDouble();
-			sum += score;
+			//double score = getData.nextDouble();
+			sum += getData.nextDouble();
 		}
 		double average = (sum/total); 
-		System.out.printf("%s's grade is %f", name, average);
+		System.out.printf("%s's grade is %.2f ", name, average);
 	}
 
 }
