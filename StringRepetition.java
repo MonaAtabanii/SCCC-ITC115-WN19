@@ -21,6 +21,7 @@ public class StringRepetition {
 		   s = str;
 		  // StringBuilder strAppnd = new StringBuilder();
 		   for (int i = 1; i<r; i++) {
+		   //for (int i = 1; i<=r; i++) {
 			  // strAppnd.append(str);
 			   s+=str;
 		   }
