@@ -4,7 +4,7 @@ public class TicketClient {
 	static int totalTickets;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int daysAdvanced;
 		String answer;
 		//int ticketNum = 0;		
