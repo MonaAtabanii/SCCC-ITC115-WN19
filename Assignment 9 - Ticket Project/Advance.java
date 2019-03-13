@@ -22,4 +22,16 @@ public class Advance extends Ticket{
 		return super.toString();
 	}
 
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		/*if (advancedDays >= daysScale) {
+			super.price = 30.00;
+		}
+		else {
+			super.price = 40.00;
+		}*/
+		return super.price;
+	}
+
 }
