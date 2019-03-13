@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Ticket {
+public abstract class Ticket {
 		double price;
 		int ticketNumber;
 		//Date d1 = new Date();
@@ -11,14 +11,15 @@ public class Ticket {
 		}
 		
 		//getPrice method
-		public double getPrice(){
-			return this.price;
-		}
+		public abstract double getPrice();//{
+			//return this.price;
+		//}
 		
 		//toString returns ticket information as String
 		public String toString(){
-		    String output = String.format("Number: %d, Price: $%.2f", this.ticketNumber, this.getPrice());
-			return output;
+		    //String output = String.format("Number: %d, Price: $%.2f", this.ticketNumber, this.getPrice());
+			//return output;
+			return "Number: " + this.ticketNumber + ", Price: " + this.getPrice();
 		}
 		
 		//return type of ticket depend on the event date
