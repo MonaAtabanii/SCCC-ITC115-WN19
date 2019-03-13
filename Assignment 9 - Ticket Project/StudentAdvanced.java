@@ -3,11 +3,12 @@ public class StudentAdvanced extends Advance{
 	
 	public StudentAdvanced(int ticketNumber, int advancedDays) {
 		super(ticketNumber, advancedDays);
-		super.price = super.getPrice()/2;
+		super.price = this.getPrice()/2;
 	}
 	
 	@Override
 	public String toString(){
-		return super.toString();
+		//System.out.println("ToString Before The student advance price is " + this.price + "the super price is " +super.price);
+		return super.toString();//+ "\n ToString After The student advance price is " + this.price + "the super price is " +super.price;
 	}
 }
