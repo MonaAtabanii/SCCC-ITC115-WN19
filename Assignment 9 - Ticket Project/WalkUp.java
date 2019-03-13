@@ -6,8 +6,8 @@ public class WalkUp extends Ticket{
 		
 		@Override
 		public double getPrice(){
-			super.price = 50.00;
-			return super.price;
+			this.price = 50.00;
+			return this.price;
 		}
 		
 		@Override
